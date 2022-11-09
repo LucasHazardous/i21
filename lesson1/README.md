@@ -124,7 +124,7 @@ Response stores Python dict that is received by converting JSON into it. The *?f
 ## Final project
 
 Project for our lesson is making an application that gets current weather conditions and list of news based on entered text.
-Remember to add imports for all elements or do `from PyQt6.QtWidgets import`.
+Remember to add imports for all elements or do `from PyQt6.QtWidgets import *`.
 
 Create a basic window and inside it create:
 
