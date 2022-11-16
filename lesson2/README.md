@@ -28,13 +28,13 @@ Coprime means that GCD of two numbers is eqal 1.
 
 ![Euler's totient function graph](./EulerPhi.png)
 
-We can observe that for any given prime Euler's totient function returns (prime-1).
+We can observe that for any given prime Euler's totient function returns (prime-1).\
 It has also another interesting property if gcd(a, b) = 1 then\
 φ(a*b) = φ(a) * φ(b)\
 Earlier we chose p1 and p2 which are two distinct prime numbers so their gcd will be 1.
 
-That means:
-φ(N) = φ(p1) * φ(p2)
+That means:\
+φ(N) = φ(p1) * φ(p2)\
 φ(N) = (p1-1)*(p2-1)
 
 Now that our next step is finding private key for decryption k.\
@@ -48,7 +48,7 @@ m = (c ^ k) mod N
 
 This works because of all previous conditions were met so we can transform our equation:
 
-m = (c ^ k) mod N
+m = (c ^ k) mod N\
 c = (m ^ e) mod N
 
 m = (m ^ (e*k)) mod N
