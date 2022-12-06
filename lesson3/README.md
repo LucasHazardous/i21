@@ -292,7 +292,7 @@ Add a [Menu](https://www.electronjs.org/docs/latest/api/menu) to your app that c
 * **Clear history** <kbd>Cmd/Ctrl+C</kbd> - removes the file
 * **Quit** <kbd>Cmd/Ctrl+W</kbd> - closes the app *Hint: for this use built-in function app.quit*
 
-> Warning! When you load the files make sure to **not load the .history file**.
+> Warning! When you load the files make sure to **not display the .history file**.
 
 Use these **fs** functions:
 - [existsSync](https://nodejs.org/api/fs.html#fsexistssyncpath)
@@ -302,4 +302,4 @@ Use these **fs** functions:
 
 ## Extra Assignment Extension
 
-Use a framework like Bulma or Tailwind or write your own style to make the app more user friendly. Add custom feature that extends app functionality. You can also play with app settings: change icon, hide the console and display history in custom element (but other task requirements still apply, ex. when there is no file display null).
+Use a framework like [Bulma](https://bulma.io/) or [Tailwind](https://tailwindcss.com/) or write your own style to make the app more user friendly. Add custom features that extends app functionality. You can also play with app settings: change icon, hide the console and display history in custom element (but other task requirements still apply, ex. when there is no file display null).
