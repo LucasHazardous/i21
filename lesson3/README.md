@@ -276,3 +276,30 @@ Try to run the app now. What happens? You get an error? It seems like we have to
 ## Summary
 
 In an Electron app we can take advantage of available Node.js modules while writing the UI for our app in simple HTML and Javascript. We learned how to create a basic window and how to open our app. We took advantage of accessing filesystem and accessed local files. But before that we discovered IPC and how to make our frontend code communicate with Node.js in both ways.
+
+## Assignment
+
+> Warning! When sending the assignment **do not send node_modules** folder. Include project files in ***name_surname.zip*** archive.
+
+You can use [this project](https://github.com/LucasHazardous/music-player) as a reference.
+
+Use code provided in this lesson to implement the following functionality:
+
+After each file read add an entry (entry = filename + newline character) to file called *.history* which should be located in *targetPath* defined in [example-project](./src/main.js).
+
+Add a [Menu](https://www.electronjs.org/docs/latest/api/menu) to your app that consists of one tab called **File** which contains three elements:
+* **Load history** <kbd>Cmd/Ctrl+H</kbd> - sends history to renderer which prints it onto the console, do not forget to set the encoding to **utf8**!, when trying to read the file after it has been removed print null
+* **Clear history** <kbd>Cmd/Ctrl+C</kbd> - removes the file
+* **Quit** <kbd>Cmd/Ctrl+W</kbd> - closes the app *Hint: for this use built-in function app.quit*
+
+> Warning! When you load the files make sure to **not load the .history file**.
+
+Use these **fs** functions:
+- [existsSync](https://nodejs.org/api/fs.html#fsexistssyncpath)
+- [readFileSync](https://nodejs.org/api/fs.html#fsreadfilesyncpath-options)
+- [unlinkSync](https://nodejs.org/api/fs.html#fsunlinksyncpath)
+- [appendFileSync](https://nodejs.org/api/fs.html#fsappendfilesyncpath-data-options)
+
+## Extra Assignment Extension
+
+Use a framework like Bulma or Tailwind or write your own style to make the app more user friendly. Add custom feature that extends app functionality. You can also play with app settings: change icon, hide the console and display history in custom element (but other task requirements still apply, ex. when there is no file display null).
