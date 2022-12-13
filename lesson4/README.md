@@ -156,7 +156,7 @@ app.on('window-all-closed', () => {
 
 ### Task
 
-Write a function to load and to add a task, tasks should be loaded from todo folder in user's home directory and sent to renderer. Tasks should be saved as json files when received from renderer.
+Write a functions to load and add tasks in *index.js*. They should be loaded from todo folder in user's home directory and sent to renderer. Tasks should be saved as json files when received from renderer.
 
 Task created by the user can look like:
 
@@ -168,8 +168,6 @@ Task created by the user can look like:
     "description": "Put trash in the bin"
 }
 ```
-
-Create appropriate html elements to display tasks, add form for creating tasks, use Bulma styling.
 
 ### Task
 
