@@ -220,7 +220,7 @@ ipcMain.on("loadFiles", (e, data) => {
 
 Feel free to add some pdf files to *your_home_directory*/example-project and test the app. 
 
-Now let's transform our loadedFiles event handler (**preload.js**):
+Now let's transform our loadedFiles event handler (**renderer.js**):
 
 ```js
 ipcRenderer.on("loadedFiles", (data) => {
